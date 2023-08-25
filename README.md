@@ -6,7 +6,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -18,10 +17,6 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ![Screenshot of the desktop desing solution](./screenshots/desktop-desing.png)
 
 ![Screenshot of the mobile desing solution](./screenshots/mobile-desing.png)
-
-### Links
-
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
