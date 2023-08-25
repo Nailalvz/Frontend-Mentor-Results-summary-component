@@ -1,0 +1,246 @@
+:root{
+    /* Colors */
+    --ligth-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavander: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Typography */
+    --paragraphs: 18px;
+
+    /* Fonts */
+
+    --hanken-grotesk: 'Hanken Grotesk', sans-serif;
+}
+
+.bg-reaction{
+    background-color: hsla(0, 100%, 67%, .1);
+}
+
+.bg-memory{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.bg-verbal{
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.bg-visual{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.reaction{
+    color: var(--ligth-red);
+}
+
+.memory{
+    color: var(--orange-yellow);
+}
+
+.verbal{
+    color: var(--green-teal);
+}
+
+.visual {
+    color: var(--cobalt-blue);
+}
+
+*{
+    font-family: var(--hanken-grotesk);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+.card{
+    display: flex;
+    height: 450px;
+    border-radius: 2rem;
+    width: 40rem;
+    box-shadow: 1rem 1rem 2rem 0rem var(--pale-blue);
+}
+
+.right{
+    flex-basis: 50%;
+    background: linear-gradient(to bottom, var(--light-slate-blue-bg) 0%, var(--light-royal-blue-bg) 100%);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.content__title{
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.content__title h1{
+    color: var(--pale-blue);
+    font-size: 1.2rem;
+}
+
+.content__total-punctuation{
+    padding: 5rem;
+    background: linear-gradient(to bottom, var(--violet-blue-circle) 0%, var(--persian-blue-circle) 100%);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__total-punctuation p{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.7rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.content__total-punctuation span{
+    font-size: 1rem;
+    color: var(--light-lavander);
+    opacity: .5;
+}
+
+.content__text{
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.content__text h2{
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+.content__text p{
+    color: var(--pale-blue);
+}
+
+.left{
+    flex-basis: 50%;
+    padding: 2rem;
+}
+
+.left__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+
+.content__title h2{
+    text-align: start;
+    color: var(--dark-gray-blue);
+    font-size: 1.2rem;
+}
+
+.content__summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.summary__card{
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+    margin-bottom: 1rem;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.punctuation p {
+    color: var(--dark-gray-blue);
+    font-weight: 700;
+}
+
+.punctuation span{
+    opacity: .4;
+    font-weight: 500;
+}
+
+.button{
+    background-color: var(--dark-gray-blue);
+    padding: .8rem 0;
+    border-radius: 5rem;
+}
+
+.button a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: var(--pale-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, var(--light-slate-blue-bg) 0%, var(--light-royal-blue-bg) 100%);
+    
+}
+
+@media(max-width: 560px){
+
+    main{
+        height: 100%;
+    }
+
+    .card{
+        flex-direction: column;
+        border-radius: 0 .5rem;
+        box-shadow: none;
+    }
+
+    .right{
+        border-radius: 0 0 2rem 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .content{
+        gap: 1rem;
+    }
+
+
+}

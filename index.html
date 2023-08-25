@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+    
+  <title>Frontend Mentor | Results summary component</title>
+
+</head>
+<body>
+
+  <main>
+    <article class="card">
+      <div class="right">
+        <div class="content">
+          <div class="content__title">
+            <h1>Your Result</h1>
+          </div>
+          <div class="content__total-punctuation">
+            <p>76 <span>of 100</span></p>
+            
+          </div>
+          <div class="content__text">
+            <h2>Great</h2>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="left">
+        <div class="left__content">
+          <div class="content__title">
+            <h2>Summary</h2>
+          </div>
+          <div class="content__summary">
+            <div class="summary__card bg-reaction">
+              <div class="name">
+                <img src="assets/images/icon-reaction.svg" alt="icon reaction">
+                <p class="reaction">Reaction</p>
+              </div>
+              <div class="punctuation"><p>80 <span>/ 100</span></p></div>
+            </div>
+            <div class="summary__card bg-memory">
+              <div class="name">
+                <img src="assets/images/icon-memory.svg" alt="icon memory">
+                <p class="memory">Memory</p>
+              </div>
+              <div class="punctuation"><p>92 <span>/ 100</span></p></div>
+            </div>
+            <div class="summary__card bg-verbal">
+              <div class="name">
+                <img src="assets/images/icon-verbal.svg" alt="icon verbal">
+                <p class="verbal">Verbal</p>
+              </div>
+              <div class="punctuation"><p>61 <span>/ 100</span></p></div>
+            </div>
+            <div class="summary__card bg-visual">
+              <div class="name">
+                <img src="assets/images/icon-visual.svg" alt="icon visual">
+                <p class="visual">Visual</p>
+              </div>
+              <div class="punctuation"><p>72 <span>/ 100</span></p></div>
+            </div>
+          </div>
+          <div class="button">
+            <a href="#">Continue</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
